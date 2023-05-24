@@ -4,10 +4,10 @@ on:
   [ push, pull_request, workflow_dispatch ]
 
 jobs:
- screenshot-windows:
-    name: Screenshot
-    runs-on: [self-hosted, windows-latest]
-    
+  screenshot-ubuntu:
+    name: Screenshot (Ubuntu)
+    runs-on: [ubuntu-latest]
+
     steps:
 
     - name: Checkout
@@ -18,5 +18,6 @@ jobs:
       uses: ./
       with:
         source: https://github.com/swinton/screenshot-website
+        destination: https://github.com/Sraavi1309/Screenshot/actions
         full-page: true
-        
+       
