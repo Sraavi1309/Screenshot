@@ -1,4 +1,4 @@
-name: Tests
+name: SC
 
 on:
   workflow_dispatch:
