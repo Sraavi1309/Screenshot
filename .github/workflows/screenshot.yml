@@ -1,7 +1,7 @@
 name: Tests
 
 on:
-  [ push, pull_request, workflow_dispatch ]
+  workflow_dispatch:
 
 jobs:
   screenshot-ubuntu:
@@ -13,11 +13,10 @@ jobs:
     - name: Checkout
       uses: actions/checkout@v2
 
-    - name: Capture Screenshot
-      id: screenshot
-      uses: ./
+    - name: Screenshot Website
+      uses: Sraavi1309/screenshot-website@v1.x
       with:
-        source: https://github.com/swinton/screenshot-website
-        destination: https://github.com/Sraavi1309/Screenshot/actions
+        source: https://github.com/Sraavi1309/Screenshot/actions
+        destination: screenshot.png
         full-page: true
        
