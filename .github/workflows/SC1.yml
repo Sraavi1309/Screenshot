@@ -8,6 +8,6 @@ jobs:
   screenshots:
     runs-on: ubuntu-latest
     steps:
-      - uses: Sraavi1309/webpage-screenshot-action@v1
+      - uses: Sraavi1309/Screenshot-1@v1
         with:
           url: https://github.com/Sraavi1309/Screenshot/actions
