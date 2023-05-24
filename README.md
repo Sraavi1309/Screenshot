@@ -13,7 +13,7 @@
 
 ```yaml
 - name: Screenshot Website
-  uses: swinton/screenshot-website@v1.x
+  uses: Sraavi1309/screenshot-website@v1.x
   with:
     source: https://github.com/swinton/screenshot-website
     destination: screenshot.png
